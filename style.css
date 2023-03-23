@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+  
+}
+
+.contaner{
+    width: 1700px;
+    min-height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 800px 600px 600px 230px;
+    grid-template-areas: "header header header header"
+                          "block1 block2 block3 block4"
+                          "block5 block6 block7 block8"
+                          "footer footer footer footer";
+}
+
+.nachalo{
+    background-image: url(img/head.jpg);
+    background-size: cover;
+    width: 1700px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 75px;
+    align-items: center;
+    text-align: center;
+}
+
+.block{
+    width: 400px;
+    height: 570px;
+    box-shadow: 0 0  2px 2px rgba(255, 12, 12, 0.596) ;
+    border-radius: 30px;
+    margin-top: 35px;
+}
+.tada{
+    width: 400px;
+    height: 190px;
+    background-image: url(img/terraria.jpg);
+    background-size: cover;
+    border-radius: 30px 30px 0 0 ;
+}
+
+.tyda{
+    width: 400px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.reew{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    gap: 5px;
+}
+
+.knopka{
+    width: 110px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(202, 202, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+}
+
+.big{
+    font-size: 74px;
+    color: white;
+    font-weight: 600;
+}
+
+.klik{
+    width: 120px;
+    height: 70px;
+    background-color: white;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.end{
+    width: 1700px;
+    height: 200px;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    margin-top: 30px;
+}
+
+.nomer{
+    width: 190px;
+    height: 80px;
+
+}
+
+header{
+    grid-area: header;
+}
+.block1{
+    grid-area: block1;
+}
+.block2{
+    grid-area: block2;
+}
+.block3{
+    grid-area: block3;
+}
+.block4{
+    grid-area: block4;
+}
+.block5{
+    grid-area: block5;
+}
+.block6{
+    grid-area: block6;
+}
+.block7{
+    grid-area: block7;
+}
+.block8{
+    grid-area: block8;
+}
+
+footer{
+    grid-area: footer;
+}
+
+@media(max-width: 800px)
+{
+    .contaner{
+        width: 800px;
+        min-height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 800px 600px 600px 600px 600px 600px 600px 600px 600px 230px ;
+        grid-template-areas: "header "
+                              "block1"
+                               "block2" 
+                               "block3" 
+                               "block4"
+                               "block5"
+                               "block6"
+                                "block7" 
+                                "block8"
+                              "footer ";
+    }
+
+    .nachalo{
+        background-image: url(img/head.jpg);
+        background-size: cover;
+        width: 800px;
+        height: 800px;
+       
+    }
+
+    .end{
+        width: 800px;
+        height: 200px;
+        background-color: coral;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       gap: 20px;
+        margin-top: 30px;
+    }
+
+    .block{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
